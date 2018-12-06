@@ -25,8 +25,11 @@
         -->
     </nav>
     <div class="container">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="/pages/vue/vue-huan-jing-da-jian-cai-keng.html">Vue环境搭建踩坑</a></li>
+        <ul class="list-unstyled">
+            <li><b>babel-core</b>和<b>babel-loader</b>的版本要对应</li>
+            <li>要正确安装<b>html-webpack-plugin</b></li>
+            <li>vue解析器需要安装<b>vue-loader</b>和<b>vue-template-compiler</b></li>
+            <li>当丢失<b>VueLoadPlugin</b>时需要安装，并且路径为<b>let VueLoaderPlugin = require("vue-loader/lib/plugin");</b></li>
         </ul>
     </div>
 </body>
